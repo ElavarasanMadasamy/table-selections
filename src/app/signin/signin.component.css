@@ -1,0 +1,17 @@
+.signinDiv{
+    width: 50%;
+    margin-left: 33%;
+    padding: 20px;
+}
+.row{
+    margin-bottom:10px;
+}
+
+.signInBtn{
+    width:100%;
+}
+
+.signupLink{
+    width: 50%;
+    text-align: right;
+}
