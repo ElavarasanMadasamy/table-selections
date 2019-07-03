@@ -1,25 +1,40 @@
-<table class="table table-bordered table-striped">
-  <thead>
-      <tr>
-          <th><input type="checkbox" [(ngModel)]="selectAllCheckbox.select" (ngModelChange)="selectAll()"/></th>
-          <th>Name</th>
-          <th>College</th>
-          <th>Company</th>
-          <th>Age</th>
-          <th>Designation</th>
-          <th>Salary</th>     
-      </tr>
-  </thead>
-  <tbody>
-      <tr *ngFor="let data of MembersList;let i=index">
-          <td><input type="checkbox" [(ngModel)]="data.selected" (ngModelChange)="checkAll()"/></td>
-          <td>{{data.name}}</td>
-          <td>{{data.college}}</td>
-          <td>{{data.company}}</td>
-          <td>{{data.age}}</td>
-          <td>{{data.designation}}</td>
-          <td>{{data.salary}}</td>
-      </tr>
-      <tr *ngIf="MembersList.length==0"><td colspan="7">No records found</td></tr>
-  </tbody>
-</table>
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div style="text-align:center">
+          <h1>
+            Welcome Elavarasan !
+          </h1>  
+          <img class="fade-in" src="../assets/images/atm.png" alt="" width="700" height="500">
+        </div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div style="text-align:center">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <!-- <th><input type="checkbox" [(ngModel)]="selectAllCheckbox.select" (ngModelChange)="selectAll()"/></th> -->
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>TotalRewards</th>
+                        <!-- <th>Designation</th>
+                        <th>Salary</th>      -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of MembersList;let i=index">
+                        <!-- <td><input type="checkbox" [(ngModel)]="data.selected" (ngModelChange)="checkAll()"/></td> -->
+                        <td>{{data.Date}}</td>
+                        <td>{{data.Description}}</td>
+                        <td>{{data.Amount}}</td>
+                        <td>{{data.TotalRewards}}</td>
+                        <!-- <td>{{data.designation}}</td>
+                        <td>{{data.salary}}</td> -->
+                    </tr>
+                    <tr *ngIf="MembersList.length==0"><td colspan="7">No records found</td></tr>
+                </tbody>
+              </table>
+        </div>
